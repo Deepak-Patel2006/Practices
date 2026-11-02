@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense - Tracker</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+</head>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Total */
+h2 {
+  margin: 10px 0;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f2f2f2;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+<body>
+
+  <div class="container">
+    <h1>Expense Tracker 💸</h1>
+
+    <!-- Add Expense -->
+    <div class="input-section">
+
+      <input type="number" id="amount" placeholder="Enter amount..." />
+      <input type="text" id="name" placeholder="Enter title..." />
+      <button id="add">Add</button>
+    </div>
+
+    <!-- Total -->
+    <h2>Total : <span id="total">0</span></h2>
+
+    <!-- List -->
+    <ul id="list"></ul>
+  </div>
+
+</body>
+
+<script src="expense.js"></script>
+</html>
